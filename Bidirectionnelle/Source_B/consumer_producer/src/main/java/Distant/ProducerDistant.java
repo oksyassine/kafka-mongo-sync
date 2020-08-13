@@ -26,7 +26,7 @@ import com.mongodb.client.model.changestream.FullDocument;
 public class ProducerDistant extends Thread {
 	private static KafkaProducer<Integer, String> producer;
 	private static final String TOPIC = "ardouz-2";
-	private static final String KAFKA_SERVER_URL = "23.97.192.20";
+	private static final String KAFKA_SERVER_URL = "ip server";
 	private static final int KAFKA_SERVER_PORT = 9092;
 	private static final String CLIENT_ID = "ARDistantProducer";
 	private static String line;
@@ -94,7 +94,7 @@ public class ProducerDistant extends Thread {
 		// Create a new Mongo Client Object to listen for change streams for all
 		// databases in the mongo server
 		//MongoClient mongoClient = MongoClients.create();
-		 ConnectionString conx = new ConnectionString("mongodb://admin:Gseii2021@23.97.192.20:27017/?authSource=admin");
+		 ConnectionString conx = new ConnectionString("mongodb://db a distance");
 	        MongoClient mongoClient = MongoClients.create(conx);
 		// MongoDatabase database = mongoClient.getDatabase("database");
 		// MongoCollection<Document> collection = database.getCollection("collection");
