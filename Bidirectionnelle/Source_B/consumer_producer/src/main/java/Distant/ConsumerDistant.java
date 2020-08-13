@@ -41,7 +41,7 @@ public class ConsumerDistant extends Thread {
 		
    Properties properties = new Properties();
     //23.97.192.20 //setting consumer's properties 
-    properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "23.97.192.20:9092");
+    properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "ip server:9092");
     properties.put(ConsumerConfig.GROUP_ID_CONFIG, "consumer-1-group");
     properties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
     properties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
@@ -51,7 +51,7 @@ public class ConsumerDistant extends Thread {
     Consumer<String, String> consumer = new KafkaConsumer(properties);
     //subscribe to topic
     consumer.subscribe(Collections.singleton("ardouz-1"));
-    ConnectionString conx = new ConnectionString("mongodb://admin:Gseii2021@23.97.192.20:27017/?authSource=admin");
+    ConnectionString conx = new ConnectionString("mongodb://ip adresse db a distance");
     MongoClient mongoClient = MongoClients.create(conx);
     //MongoClient mongoClient = MongoClients.create();
     //poll the -record from the topic
