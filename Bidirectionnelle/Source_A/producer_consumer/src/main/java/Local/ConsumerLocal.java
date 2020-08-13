@@ -41,7 +41,7 @@ public class ConsumerLocal extends Thread {
 		
 	       Properties properties = new Properties();
 	        //23.97.192.20 //setting consumer's properties 
-	        properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "23.97.192.20:9092");
+	        properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "ip server:9092");
 	        properties.put(ConsumerConfig.GROUP_ID_CONFIG, "consumer-2-group");
 	        properties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
 	        properties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
