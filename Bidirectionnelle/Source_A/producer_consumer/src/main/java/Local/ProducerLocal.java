@@ -33,7 +33,7 @@ import com.mongodb.client.model.changestream.FullDocument;
 public class ProducerLocal extends Thread {
 	private static KafkaProducer<Integer, String> producer;
 	private static final String TOPIC = "ardouz-1";
-	private static final String KAFKA_SERVER_URL = "23.97.192.20";
+	private static final String KAFKA_SERVER_URL = "ip server";
 	private static final int KAFKA_SERVER_PORT = 9092;
 	private static final String CLIENT_ID = "ARLocalProducer";
 	private static String line;
